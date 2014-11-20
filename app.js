@@ -8,12 +8,17 @@ myApp.config(function($routeProvider) {
     })
     .when('/two', {
       templateUrl: 'inc/two.html',
-      controller: 'mainController'
+      controller: 'secondController'
     })
 });
 
 
-myApp.controller('mainController', ['$scope', '$location',
-  function($scope, $location) {
+myApp.controller('mainController', ['$scope',
+  function($scope) {
+
+  }]);
+
+myApp.controller('secondController', ['$scope',
+  function($scope) {
 
   }]);
