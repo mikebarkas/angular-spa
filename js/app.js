@@ -13,12 +13,7 @@ myApp.config(function($routeProvider) {
 });
 
 
-myApp.controller('mainController', ['$scope', '$log',
-  function($scope, $log) {
-
-  }]);
-
-myApp.controller('secondController', ['$scope', '$log',
-  function($scope, $log) {
-
+myApp.controller('mainController', ['$scope', '$location',
+  function($scope, $location) {
+    $scope.variable = "Scope Name Variable";
   }]);
